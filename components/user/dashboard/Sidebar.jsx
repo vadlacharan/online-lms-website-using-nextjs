@@ -13,7 +13,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { CardHoverEffectDemo } from "./courses/Courses";
 
-export function SidebarDemo() {
+export function SidebarDemo({ children }) {
   const links = [
     {
       label: "Courses",
@@ -71,7 +71,7 @@ export function SidebarDemo() {
         
       </Sidebar>
 
-      <CardHoverEffectDemo />
+      { children}
       
       
       
